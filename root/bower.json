@@ -1,0 +1,24 @@
+{
+  "name": "{%= name %}",
+  "description": "{%= description %}",
+  "version": "{%= version %}",
+  "homepage": "{%= homepage %}",
+  "license": "{%= licenses %}",
+  "copyright": "{%= author_name %}",
+  "main": "dist/{%= name %}.js",
+  "dependencies": {
+    "scribe": "~1.0.0",
+    "scribe-plugin-toolbar": "~0.1.4",
+    "scribe-common": "~0.0.11",
+    "lodash-amd": "~2.4.1"
+  },
+  "devDependencies": {},
+  "ignore": [
+    "test",
+    "example",
+    "lib",
+    "Gruntfile.js",
+    "package.json",
+    "grunt"
+  ]
+}
