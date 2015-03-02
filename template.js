@@ -49,7 +49,8 @@ exports.template = function(grunt, init, done) {
       'selenium-webdriver': '^2.44.0',
       'webdriver-manager': '^1.0.1',
       "bower": "^1.3.12",
-      "glob": "^4.1.5"
+      "glob": "^4.1.5",
+      "mversion": "^1.3.0"
     };
 
     props.scripts = {
