@@ -3,7 +3,7 @@
 > Create a scribe-plugin module with [grunt-init][]. This takes an
   opinionated approach to the build and testing process. By default it
   uses browserify to build the plugin. If you want to switch it out
-  it's easy to do so.
+  it's easy to do so. It also defaults to using babel to use ES6
 
 [grunt-init]: http://gruntjs.com/project-scaffolding
 
