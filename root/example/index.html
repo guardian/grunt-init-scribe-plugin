@@ -29,7 +29,7 @@
     }
   });
   require(['scribe','{%= name %}'],
-          function(Scribe, scribePlugin()) {
+          function(Scribe, scribePlugin) {
     window.Scribe = Scribe;
     window.scribe = new Scribe(document.querySelector('.scribe'));
     scribe.use(scribePlugin());
