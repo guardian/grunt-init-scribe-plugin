@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<title>{%= name %}</title>
+<title>scribe-plugin-content-cleaner</title>
 <style>
   * {
     margin: 0;
@@ -17,19 +17,19 @@
 </head>
 
 <body>
-<h1>{%= name %}</h1>
+<h1>Scribe Plugin Content Cleaner</h1>
 <div class='scribe'></div>
-<script src='../bower_components/requirejs/require.js'></script>
+<script src='../../bower_components/requirejs/require.js'></script>
 <script>
   require.config({
-    baseUrl: '../',
+    baseUrl: '../../',
     paths: {
-        'scribe': 'bower_components/scribe/scribe',
-        '{%= name %}': "build/{%= name %}",
+      'scribe': 'bower_components/scribe/scribe',
+       '{%= name %}': "build/{%= name %}"
     }
   });
   require(['scribe','{%= name %}'],
-          function(Scribe, scribePlugin()) {
+          function(Scribe, scribePlugin){
     window.Scribe = Scribe;
     window.scribe = new Scribe(document.querySelector('.scribe'));
     scribe.use(scribePlugin());

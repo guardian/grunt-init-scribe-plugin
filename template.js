@@ -58,7 +58,8 @@ exports.template = function(grunt, init, done) {
       "test-chrome": "TEST_SERVER_PORT=9090 BROWSER_NAME='chrome' ./run-tests.sh",
       "test": "npm run test-chrome",
       "postinstall": "bower install",
-      "build": ""
+      "build": "browserify src/{%= name %} --standalone {%= name %} -t babelify > ./build/{% name %}.js",
+      "build-prod": "npm run build && uglifyjs ./build/{%= name %}.js > ./build/{%= name %}.min.js"
     };
 
     // Files to copy (and process).
